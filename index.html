@@ -5,16 +5,26 @@
     crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href='a.png'>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <style>
+
 body {
   font-family: "Didot";
 }
 .parallax {
-
     background-image: url("Angela.png");
-
     min-height: 100%;
-
+    max-width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,10 +78,10 @@ body {
   height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(Kimono2.jpg);
+  /* background-image: url(Kimono2.jpg); */
 }
 #Kimono:hover {
-  background-image: url(Kimono.jpg);
+  /* background-image: url(Kimono.jpg); */
 }
 
 #Ginza {
@@ -79,10 +89,10 @@ body {
   height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(Ginza2.jpg);
+  /* background-image: url(Ginza2.jpg); */
 }
 #Ginza:hover {
-  background-image: url(Ginza.jpg);
+  /* background-image: url(Ginza.jpg); */
 }
 
 #PE {
@@ -90,10 +100,10 @@ body {
   height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(PE2.jpg);
+  /* background-image: url(PE2.jpg); */
 }
 #PE:hover {
-  background-image: url(PE.jpg);
+  /* background-image: url(PE.jpg); */
 }
 
 #OG {
@@ -133,94 +143,217 @@ a{
   color:black;
   text-decoration: none;
 }
+
+.imagepadding {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
 .margined {
-  margin-left: 65px;
-  margin-right: 13px;
+  margin-left: 60px;
+  margin-right: 10px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
 .margin{
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 30px;
   margin-bottom: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
+
+.song{
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
 
 </style>
     <title>I'm Angela Yu</title>
       </head>
   <body>
 
-<div class="parallax"></div>
 
-<div style="background-color:White;font-size:36px;padding-top:40px;"></div>
-<center style=font-size:35px><b>Hey, I'm Angela</b></center>
-<div class="margin">
-<center style=font-size:20px>Hi my name is Angela and I am a highschool freshmen from an international school in Korea.
-I usually like to draw or read whenever I am bored. Before, I wasn't much of a reader, but after reading
-Harry Potter I started to enjoy reading. </center>
+<script>
+  function changeImageSrc(id, src) {
+    console.log(id, src);
+    $('#'+id).attr("src", src);
+  }
+</script>
 
-<center style="font-size:20px;padding-top: 20px;">I am currently a part of the speech & debate team in school, and have visited different
-countries to compete and participate. My favorite sports are volleyball and floorball since I used be in the
-JV volleyball team in school. Currently, I'm living in Korea, but I have previously lived in Japan for 5~6 years where I would also call home.
-</center>
+<div class="parallax">
 
 </div>
+  <div style="background-color:White;font-size:36px;padding-top:40px;"></div>
+  <center style=font-size:35px><b>Hey, I'm Angela</b></center>
 </div>
 
-<div style="background-color:White;font-size:36px;padding-top:10px;"></div>
-<center style=font-size:35px><b>Photos Taken in Japan</b></center>
-<div class="margined">
-<div class="row">
-  <div class="col-4" id="Kimono">
-  </div>
-  <div class="col-4" id="Japan">
-  </div>
-  <div class="col-4" id="Ginza">
-  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class='col-md-6'>
+      <center style=font-size:20px>Hi my name is Angela and I am a highschool freshmen from an international school in Korea.
+      I usually like to draw or read whenever I am bored. Before, I wasn't much of a reader, but after reading
+      Harry Potter I started to enjoy reading. </center>
+
+
+      <center style="font-size:20px;padding-top: 20px;">I am currently a part of the speech & debate team in school, and have visited different
+      countries to compete and participate. My favorite sports are volleyball and floorball since I used be in the
+      JV volleyball team in school. Currently, I'm living in Korea, but I have previously lived in Japan for 5~6 years where I would also call home.
+      </center>
+    </div>
+    <div class="col-md-3">
+    </div>
   </div>
 </div>
+
+<div class="container">
+  <div style="background-color:White;font-size:36px;padding-top:5px;">
+    <center style=font-size:35px><b>Photos Taken in Japan</b></center>
+    <div class="">
+      <div class="col-md-4 imagepadding">
+        <img src="Kimono2.jpg" class="img-responsive" id="kimono-image" onmouseout="changeImageSrc('kimono-image','Kimono2.jpg')" onmouseover="changeImageSrc('kimono-image','Kimono.jpg')"/>
+      </div>
+
+      <div class="col-md-4 imagepadding">
+        <img src="Ginza2.jpg" class="img-responsive" id="ginza-image" onmouseout="changeImageSrc('ginza-image','Ginza2.jpg')" onmouseover="changeImageSrc('ginza-image','Ginza.jpg')"/>
+      </div>
+      <div class="col-md-4 imagepadding">
+        <img src="Japan2.jpg" class="img-responsive" id="japan-image" onmouseout="changeImageSrc('japan-image','Japan2.jpg')" onmouseover="changeImageSrc('japan-image','Japan.jpg')"/>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div style="background-color:White;font-size:36px;padding-top:10px;">
-<center style=font-size:35px><b>Broskies/Friends</b></center>
-<div class="margined">
-<div class="row">
-  <div class="col-4" id="Broskies">
+  <center style=font-size:35px><b>Broskies/Friends</b></center>
+  <div class="margined">
+    <div class="row">
+      <div class="col-md-4" id="Broskies">
+      </div>
+      <div class="col-md-4" id="PE">
+      </div>
+      <div class="col-md-4" id="OG">
+      </div>
+    </div>
   </div>
-  <div class="col-4" id="PE">
-  </div>
-  <div class="col-4" id="OG">
-  </div>
-  </div>
-</div>
 </div>
 
 <div style="background-color:White;font-size:36px;padding-top:10px;"></div>
 <center style=font-size:35px><b>Speech and Debate</b></center>
 <div class="margined">
 <div class="row">
-  <div class="col-4" id="MUN">
+  <div class="col-md-4" id="MUN">
   </div>
-  <div class="col-4" id="Name">
+  <div class="col-md-4" id="Name">
   </div>
-  <div class="col-4" id="Conference">
+  <div class="col-md-4" id="Conference">
   </div>
   </div>
 </div>
 </div>
 
 <div style="background-color:#e8decd;font-size:36px;padding-top:40px;">
-<center style=font-size:35px><b>Lighten Up</b></center>
-<div class="margin">
-<center style=font-size:20px><a href="https://i-h1.pinimg.com/564x/25/5e/71/255e717237da458ef21813196945f9c6.jpg">Have Some Fun</a><Center>
-<center style=font-size:20px><a href="http://66.media.tumblr.com/tumblr_m7ufgei6qi1rr3l61o1_500.gif">Sit Back and Relax</a><Center>
-<center style=font-size:20px><a href="https://s24193.pcdn.co/wp-content/uploads/2017/09/funny-relatable-quotes-entity-24.png">For Some Laughs</a><Center>
-<center style=font-size:20px><a href="https://i.pinimg.com/originals/19/f0/cc/19f0cc32094785c145496de5de0e26fb.jpg">Funny Memes</a><Center>
-<center style=font-size:20px><a href="http://cdn.playbuzz.com/cdn//af04aa15-e0a5-44be-9d37-cc2bae52501f/b12c477d-27cb-4ffe-a176-fac6c36c441a.jpg">Relatable</a><Center>
+  <center style=font-size:35px><b>Lighten Up</b></center>
+  <div class="margin">
+    <center style=font-size:20px></span><a href="https://i-h1.pinimg.com/564x/25/5e/71/255e717237da458ef21813196945f9c6.jpg" target="blank"> Have Some Fun</a><Center>
+    <center style=font-size:20px><a href="http://66.media.tumblr.com/tumblr_m7ufgei6qi1rr3l61o1_500.gif"target="blank">Sit Back and Relax</a><Center>
+        <center style=font-size:20px><a href="https://s24193.pcdn.co/wp-content/uploads/2017/09/funny-relatable-quotes-entity-24.png"target="blank">For Some Laughs</a><Center>
+        <center style=font-size:20px><a href="https://i.pinimg.com/originals/19/f0/cc/19f0cc32094785c145496de5de0e26fb.jpg"target="blank">Funny Memes</a><Center>
+        <center style=font-size:20px><a href="http://cdn.playbuzz.com/cdn//af04aa15-e0a5-44be-9d37-cc2bae52501f/b12c477d-27cb-4ffe-a176-fac6c36c441a.jpg"target="blank">Relatable</a><Center>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div style="background-color:white;font-size:36px;padding-top:40px;">
+  <center style=font-size:35px><span class="glyphicon glyphicon-headphones" aria-hidden="true"></center>
+  <center style=font-size:25px>Ocean by Martin Garrix ft. Khalid</center>
+  <div class="song">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BDocp-VpCwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="container">
+  <!-- beginning of accordion -->
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <center>  My Favorite Movie/Netflix Series <center>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <center>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </center>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <center>Current Playlist </center>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+        <center>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</center>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <center>Extra Curriculums</center>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <center>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</center>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <center>Hobbies and Interests</center>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFive">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Life in Japan
+          </a>
+        </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- end of accordion -->
 </div>
 </div>
 </body>
